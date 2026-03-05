@@ -48,7 +48,7 @@ and proposing practical solutions.
 
 ## 📊 Case Studies: Real-World Nigerian Incidents
 
-### [GTBank Cyberattack (February 2025)](./case-studies/gtbank-cyberattack.md)
+### [GTBank Cyberattack ](https://businessday.ng/companies/article/gtbanks-cyber-attack-a-wake-up-call-for-nigerian-banks-amid-recapitalisation-efforts/)
 Analysis of the attack that disrupted services for millions of users.
 
 ### [UBA/Netflix OTP Abuse Case](./case-studies/uba-otp-abuse.md)
