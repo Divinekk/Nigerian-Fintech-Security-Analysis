@@ -110,25 +110,13 @@ See working implementations in my projects:
 
 ---
 
-## 📈 Impact Metrics
-
-**Problem Scale:**
-- ₦52.26 billion lost to fraud in 2024 (Blueprint Newspapers)
-- 70+ million Nigerians using fintech services (Moniepoint alone)
-- 1.3 million phishing attempts in Nigeria (H1 2023, Check Point Research)
-
-**If Recommendations Adopted:**
-- Estimated 60-80% reduction in credential-based attacks
-- 90%+ reduction in BOLA-related data breaches
-- 50%+ reduction in OTP-based fraud
-
 ---
 
 ## 📝 Publications & Presentations
 
 ### Research Papers
 - **TDK Conference 2025** - "Cryptanalysis of Cryptographic Algorithms 
-  in Nigerian Banking Security" (Best Presenter Award)
+  in Nigerian Banking Security" (Recognised as the Best Presenter)
 
 ### Blog Articles
 - [Why API Security is the Backbone of Nigerian Fintech](https://medium.com/@divine.ogbonna.chisom/why-api-security-is-the-backbone-of-nigerian-fintech-lessons-from-building-a-secure-banking-3cc5ed26c498)
