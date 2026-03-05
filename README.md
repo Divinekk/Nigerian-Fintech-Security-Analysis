@@ -126,7 +126,7 @@ See working implementations in my projects:
 
 ### Blog Articles
 - [Why API Security is the Backbone of Nigerian Fintech](https://medium.com/@divine.ogbonna.chisom/why-api-security-is-the-backbone-of-nigerian-fintech-lessons-from-building-a-secure-banking-3cc5ed26c498)
-- [How I Prevented BOLA Vulnerabilities in a Banking API]((https://medium.com/@divine.ogbonna.chisom/how-i-prevented-bola-vulnerabilities-in-a-banking-api-91418a78245b)
+- [How I Prevented BOLA Vulnerabilities in a Banking API](https://medium.com/@divine.ogbonna.chisom/how-i-prevented-bola-vulnerabilities-in-a-banking-api-91418a78245b)
 - [Completing the Security Trilogy: AES Encryption, Testing and Deployment](https://medium.com/@divine.ogbonna.chisom/completing-the-security-trilogy-encryption-testing-and-deployment-668e87e93d33)
 
 ---
