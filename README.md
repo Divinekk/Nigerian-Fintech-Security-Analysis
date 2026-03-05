@@ -51,7 +51,7 @@ and proposing practical solutions.
 ### [GTBank Cyberattack ](https://businessday.ng/companies/article/gtbanks-cyber-attack-a-wake-up-call-for-nigerian-banks-amid-recapitalisation-efforts/)
 Analysis of the attack that disrupted services for millions of users.
 
-### [UBA/Netflix OTP Abuse Case](./case-studies/uba-otp-abuse.md)
+### [UBA/Netflix OTP Abuse Case]([./case-studies/uba-otp-abuse.md](https://pmnewsnigeria.com/2024/05/21/nefgad-drags-netflix-old-generation-bank-to-court-over-abuse-of-otp-customers-account-details/)
 How weak OTP implementation led to unauthorized recurring charges.
 
 ### [POS System Vulnerabilities](./case-studies/pos-vulnerabilities.md)
