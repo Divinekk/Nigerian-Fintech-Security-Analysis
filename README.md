@@ -12,8 +12,7 @@ Research-backed analysis of security vulnerabilities in Nigerian financial techn
 
 This repository documents findings from my undergraduate thesis 
 **"Cryptanalysis of Cryptographic Algorithms in Nigerian Banking 
-Security"** which won **Best Presenter Award** at TDK Conference 2025, 
-University of Debrecen, Hungary.
+Security"** which was recognized as the **Best Presenter** at TDK Conference 2025, University of Debrecen, Hungary.
 
 The research analyzes cryptographic implementations in Nigerian 
 banking and fintech systems, identifying critical vulnerabilities 
