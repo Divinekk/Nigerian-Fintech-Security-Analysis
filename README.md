@@ -48,11 +48,15 @@ and proposing practical solutions.
 
 ## 📊 Case Studies: Real-World Nigerian Incidents
 
+### [FSDH Insider Fraud (2026)][(./case-studies/fsdh-insider-fraud-2026.md)](https://www.efcc.gov.ng/news/efcc-arraigns-bankers-for-alleged-30666781-50250-fraud-in-lagos) 
+Two bank officials arraigned for ₦527 million SWIFT fraud. Analysis of insider threats and access control failures
+
 ### [GTBank Cyberattack ](https://businessday.ng/companies/article/gtbanks-cyber-attack-a-wake-up-call-for-nigerian-banks-amid-recapitalisation-efforts/)
 Analysis of the attack that disrupted services for millions of users.
 
 ### [UBA/Netflix OTP Abuse Case](https://pmnewsnigeria.com/2024/05/21/nefgad-drags-netflix-old-generation-bank-to-court-over-abuse-of-otp-customers-account-details/)
 How weak OTP implementation led to unauthorized recurring charges.
+
 
 ### [Digital Payment Fraud Statistics (2024-2025)](https://nibss-plc.com.ng/digital-payment-fraud-drops-51-to-n25-85b-lagos-accounts-for-63/)
 ₦52.26 billion lost in 2024, declined 51% to ₦25.85 billion in 2025 
