@@ -51,7 +51,7 @@ and proposing practical solutions.
 ### [GTBank Cyberattack ](https://businessday.ng/companies/article/gtbanks-cyber-attack-a-wake-up-call-for-nigerian-banks-amid-recapitalisation-efforts/)
 Analysis of the attack that disrupted services for millions of users.
 
-### [UBA/Netflix OTP Abuse Case]([./case-studies/uba-otp-abuse.md](https://pmnewsnigeria.com/2024/05/21/nefgad-drags-netflix-old-generation-bank-to-court-over-abuse-of-otp-customers-account-details/)
+### [UBA/Netflix OTP Abuse Case](https://pmnewsnigeria.com/2024/05/21/nefgad-drags-netflix-old-generation-bank-to-court-over-abuse-of-otp-customers-account-details/)
 How weak OTP implementation led to unauthorized recurring charges.
 
 ### [POS System Vulnerabilities](./case-studies/pos-vulnerabilities.md)
@@ -125,9 +125,9 @@ See working implementations in my projects:
   in Nigerian Banking Security" (Best Presenter Award)
 
 ### Blog Articles
-- [Why API Security is the Backbone of Nigerian Fintech](https://medium.com/@divine.ogbonna.chisom)
-- [How I Prevented BOLA Vulnerabilities in a Banking API](https://medium.com/@divine.ogbonna.chisom)
-- [Completing the Security Trilogy: AES Encryption and Testing](https://medium.com/@divine.ogbonna.chisom)
+- [Why API Security is the Backbone of Nigerian Fintech](https://medium.com/@divine.ogbonna.chisom/why-api-security-is-the-backbone-of-nigerian-fintech-lessons-from-building-a-secure-banking-3cc5ed26c498)
+- [How I Prevented BOLA Vulnerabilities in a Banking API]((https://medium.com/@divine.ogbonna.chisom/how-i-prevented-bola-vulnerabilities-in-a-banking-api-91418a78245b)
+- [Completing the Security Trilogy: AES Encryption, Testing and Deployment](https://medium.com/@divine.ogbonna.chisom/completing-the-security-trilogy-encryption-testing-and-deployment-668e87e93d33)
 
 ---
 
@@ -169,7 +169,6 @@ This is an ongoing research project. Contributions welcome:
 **Divine Ogbonna**  
 Security-Focused Backend Engineer | Fintech Security Researcher
 
-- **Email:** divine.ogbonna.chisom@gmail.com
 - **GitHub:** [@Divinekk](https://github.com/Divinekk)
 - **LinkedIn:** [Connect](https://linkedin.com/in/divine-ogbonna)
 - **Medium:** [Read My Articles](https://medium.com/@divine.ogbonna.chisom)
