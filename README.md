@@ -18,7 +18,7 @@ The research analyzes cryptographic implementations in Nigerian
 banking and fintech systems, identifying critical vulnerabilities 
 and proposing practical solutions.
 
-**[📄 Read Full Research Paper](./research/TDK_Banking_Security_Research.pdf)**
+**[📄 Read Full Research Paper](./TDK_Banking_Security_Research.pdf)**
 
 ---
 
