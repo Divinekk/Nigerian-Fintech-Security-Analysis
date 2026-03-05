@@ -31,7 +31,7 @@ and proposing practical solutions.
 
 ### 2. Authentication & Authorization
 **Compared:** JWT+HMAC vs JWT+RSA256 vs JWT+EdDSA vs JWT+AES-GCM  
-**Critical Finding:** 80%+ of Nigerian APIs vulnerable to BOLA  
+**Critical Finding:** Nigerian APIs vulnerable to BOLA  
 **Recommendation:** Service-layer ownership validation
 
 ### 3. One-Time Password Systems
