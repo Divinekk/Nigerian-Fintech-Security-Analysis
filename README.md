@@ -54,11 +54,13 @@ Analysis of the attack that disrupted services for millions of users.
 ### [UBA/Netflix OTP Abuse Case](https://pmnewsnigeria.com/2024/05/21/nefgad-drags-netflix-old-generation-bank-to-court-over-abuse-of-otp-customers-account-details/)
 How weak OTP implementation led to unauthorized recurring charges.
 
-### [POS System Vulnerabilities](./case-studies/pos-vulnerabilities.md)
-EFCC warning about weak verification measures in point-of-sale systems.
+### [Digital Payment Fraud Statistics (2024-2025)](https://nibss-plc.com.ng/digital-payment-fraud-drops-51-to-n25-85b-lagos-accounts-for-63/)
+₦52.26 billion lost in 2024, declined 51% to ₦25.85 billion in 2025 
+(NIBSS). Analysis of the improvement and remaining challenges.
 
-### [Blueprint Report: ₦52.26bn Fraud (2024)](./case-studies/fraud-statistics-2024.md)
-Analysis of the financial sector fraud surge and root causes.
+*This is an ongoing research repository. Case studies added regularly 
+as incidents are analyzed.*
+
 
 ---
 
