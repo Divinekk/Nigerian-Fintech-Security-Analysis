@@ -1,183 +1,79 @@
-## 🔐 Nigerian Fintech Security Analysis
+# Nigerian Fintech Security Analysis
 
-Research-backed analysis of security vulnerabilities in Nigerian financial technology systems, with proposed solutions.
+Research-backed cryptanalysis of authentication and encryption protocols used in Nigerian banking systems, with documented vulnerabilities and proposed improvements.
 
-
-> "₦52.26 billion lost to fraud in 2024. The problem isn't technology - 
-> it's implementation."
+> "52.26 billion naira lost to fraud in 2024. The problem is not the technology. It is the implementation."
 
 ---
 
-## 📚 About This Research
+## About This Research
 
-This repository documents findings from my undergraduate thesis 
-**"Cryptanalysis of Cryptographic Algorithms in Nigerian Banking 
-Security"** which was recognized as the **Best Presenter** at TDK Conference 2025, University of Debrecen, Hungary.
+**"Cryptanalysis of Cryptographic Algorithms in Nigerian Banking Security: JWT, HMAC, RSA256, AES, HOTP, TOTP and BCrypt"**
+University of Debrecen, 2025. Best Presenter, TDK Research Conference, Informatics Section.
 
-The research analyzes cryptographic implementations in Nigerian 
-banking and fintech systems, identifying critical vulnerabilities 
-and proposing practical solutions.
+**[Read the Full Paper](./TDK_Banking_Security_Research.pdf)**
 
-**[📄 Read Full Research Paper](./TDK_Banking_Security_Research.pdf)**
+The research reviews existing cryptographic literature, benchmarks algorithms across five metrics, and identifies implementation gaps specific to Nigerian banking infrastructure. No direct code implementation was done within the thesis itself (see p.43). Vault-API was built afterwards as a standalone implementation of the findings.
 
 ---
 
-## 🎯 Key Research Areas
+## Key Findings
 
-### 1. Password Hashing Algorithms
-**Compared:** BCrypt vs Argon2 vs SHA-256  
-**Recommendation:** Argon2 with parallelism for Nigerian fintech  
-**Why:** Balances security with server costs in emerging markets
+**Password Hashing**
+BCrypt's default cost factor of 10 is too low for modern brute-force hardware. Argon2 is the stronger recommendation but BCrypt at cost factor 12 is the pragmatic minimum.
 
-### 2. Authentication & Authorization
-**Compared:** JWT+HMAC vs JWT+RSA256 vs JWT+EdDSA vs JWT+AES-GCM  
-**Critical Finding:** Nigerian APIs vulnerable to BOLA  
-**Recommendation:** Service-layer ownership validation
+**JWT Authentication**
+JWT with AES-GCM delivers the best performance and lowest overhead across benchmarks. Nigerian APIs are broadly exposed to BOLA (OWASP API Security Top 1) due to missing service-layer ownership validation.
 
-### 3. One-Time Password Systems
-**Compared:** HOTP vs TOTP  
-**Vulnerability:** SMS-based OTP susceptible to SIM-swap attacks  
-**Recommendation:** TOTP with push notifications
+**One-Time Passwords**
+SMS-based OTP is vulnerable to SIM-swap attacks, documented in the UBA/Netflix case below. TOTP with push notification fallback is the recommended replacement.
 
-### 4. Encryption at Rest
-**Compared:** AES-CBC vs AES-GCM  
-**Recommendation:** AES-256-GCM for financial data  
-**Why:** Built-in authentication prevents tampering
+**Encryption at Rest**
+AES-256-GCM provides confidentiality and integrity in one operation. AES-CBC requires a separate HMAC and should not be used for sensitive financial data.
 
 ---
 
-## 📊 Case Studies: Real-World Nigerian Incidents
+## Case Studies
 
-### [FSDH Insider Fraud Reported by EFCC (2026)](https://www.efcc.gov.ng/news/efcc-arraigns-bankers-for-alleged-30666781-50250-fraud-in-lagos) 
-Two bank officials arraigned for ₦527 million SWIFT fraud. Analysis of insider threats and access control failures
+**[GTBank Website Attack, August 2024](https://businessday.ng/companies/article/gtbanks-cyber-attack-a-wake-up-call-for-nigerian-banks-amid-recapitalisation-efforts/)**
+GTBank confirmed an attempted hack on its website one day after renewing its domain, and days after closing a 400.5 billion naira share offer. No customer data was compromised. Relevant to: DNS-layer attack vectors, domain security hygiene, and how high-value financial events create elevated threat windows.
 
-### [Digital Payment Fraud Statistics (2024-2025)](https://nibss-plc.com.ng/digital-payment-fraud-drops-51-to-n25-85b-lagos-accounts-for-63/)
-₦52.26 billion lost in 2024, declined 51% to ₦25.85 billion in 2025 
-(NIBSS). Analysis of the improvement and remaining challenges.
+**[UBA/Netflix OTP Abuse](./TDK_Banking_Security_Research.pdf)**
+NEFGAD documented unauthorized recurring debits from a Nigerian customer's account through exploited OTP flows. Single-use OTPs were not enforced per transaction, allowing repeated charges under a single OTP event.
 
-### [GTBank Cyberattack ](https://businessday.ng/companies/article/gtbanks-cyber-attack-a-wake-up-call-for-nigerian-banks-amid-recapitalisation-efforts/)
-Analysis of the attack that disrupted services for millions of users.
+**[FSDH Insider Fraud, EFCC 2026](./TDK_Banking_Security_Research.pdf)**
+Two bank officials arraigned for 527 million naira SWIFT fraud. Insufficient service-layer authorization checks enabled insider exploitation at scale. A direct real-world consequence of the BOLA vulnerabilities analyzed in this research.
 
-### [UBA/Netflix OTP Abuse Case](https://pmnewsnigeria.com/2024/05/21/nefgad-drags-netflix-old-generation-bank-to-court-over-abuse-of-otp-customers-account-details/)
-How weak OTP implementation led to unauthorized recurring charges.
-
-
-*This is an ongoing research repository. Case studies added regularly 
-as incidents are analyzed.*
-
+**[Digital Payment Fraud Trend, 2024 to 2025](./TDK_Banking_Security_Research.pdf)**
+52.26 billion naira lost in 2024, declining 51% to 25.85 billion naira in 2025 (NIBSS). Analysis of what drove the improvement and where structural vulnerabilities remain.
 
 ---
 
-## 🛡️ Proposed Security Framework
+## Implementations
 
-### For Banking Institutions
-1. **Password Storage:** Migrate to Argon2 (cost: minimal, impact: high)
-2. **API Authorization:** Implement BOLA prevention at service layer
-3. **OTP Systems:** Replace SMS with TOTP + push notifications
-4. **Encryption:** Adopt AES-256-GCM for sensitive data at rest
-5. **Monitoring:** Real-time anomaly detection systems
-
-### For Fintech Startups
-1. **Start Secure:** Build with security-first architecture
-2. **Use Proven Standards:** Don't reinvent cryptography
-3. **Regular Audits:** Quarterly security assessments
-4. **Employee Training:** Security awareness programs
-5. **Incident Response:** Pre-planned breach protocols
-
-### For Regulatory Bodies
-1. **Minimum Standards:** Mandate baseline security requirements
-2. **Penetration Testing:** Annual third-party security audits
-3. **Incident Reporting:** Mandatory breach disclosure framework
-4. **Public Awareness:** Consumer education campaigns
-5. **Enforcement:** Penalties for non-compliance
-
----
-
-## 💻 Implementation Examples
-
-See working implementations in my projects:
+The research is theoretical. These two projects implement the findings in code.
 
 **[Vault-API](https://github.com/Divinekk/Vault-API)**
-- BCrypt password hashing (cost factor 12)
-- JWT authentication with HS256
-- BOLA prevention at service layer
-- AES-256-GCM encryption for account balances
+Secure banking backend built directly from the thesis recommendations.
+BCrypt at cost factor 12, JWT authentication, BOLA prevention at the service layer, AES-256-GCM for account balances at rest.
 
 **[LedgerLoom](https://github.com/Divinekk/LedgerLoom)**
-- Optimistic locking for race condition prevention
-- Atomic transactions with @Transactional
-- High-concurrency transaction handling
+High-concurrency transaction engine solving the Double-Spending Problem.
+Optimistic locking via JPA @Version, atomic fund transfers with @Transactional.
 
 ---
 
----
+## Related Writing
 
-## 📝 Publications & Presentations
-
-### Research Papers
-- **TDK Conference 2025** - "Cryptanalysis of Cryptographic Algorithms 
-  in Nigerian Banking Security" (Recognised as the Best Presenter)
-
-### Blog Articles
-- [Why API Security is the Backbone of Nigerian Fintech](https://medium.com/@divine.ogbonna.chisom/why-api-security-is-the-backbone-of-nigerian-fintech-lessons-from-building-a-secure-banking-3cc5ed26c498)
-- [How I Prevented BOLA Vulnerabilities in a Banking API](https://medium.com/@divine.ogbonna.chisom/how-i-prevented-bola-vulnerabilities-in-a-banking-api-91418a78245b)
-- [Completing the Security Trilogy: AES Encryption, Testing and Deployment](https://medium.com/@divine.ogbonna.chisom/completing-the-security-trilogy-encryption-testing-and-deployment-668e87e93d33)
+- [Why API Security is the Backbone of Nigerian Fintech](https://medium.com/@divine.ogbonna.chisom)
+- [How I Prevented BOLA Vulnerabilities in a Banking API](https://medium.com/@divine.ogbonna.chisom)
+- [Completing the Security Trilogy: AES Encryption, Testing and Deployment](https://medium.com/@divine.ogbonna.chisom)
 
 ---
 
-## 🔬 Research Methodology
+## Contact
 
-**Approach:**
-1. Literature review of cryptographic algorithms
-2. Comparative performance analysis (speed, memory, security)
-3. Real-world case study analysis
-4. Implementation and testing in Vault-API
-5. Gap identification and solution proposal
+Divine Ogbonna
+[GitHub](https://github.com/Divinekk) | [LinkedIn](https://www.linkedin.com/in/ogbonna-divine-a81453242/) | [Medium](https://medium.com/@divine.ogbonna.chisom)
 
-**Tools Used:**
-- Java Spring Boot for implementation
-- OWASP Top 10 for vulnerability framework
-- Nigerian banking fraud reports for context
-- Academic papers on cryptography
-
----
-
-## 🤝 Contributing
-
-This is an ongoing research project. Contributions welcome:
-- Additional Nigerian fintech case studies
-- Security incident reports
-- Implementation feedback
-- Academic critique
-
-**How to contribute:**
-1. Fork this repository
-2. Create your case study/analysis in markdown
-3. Submit a pull request
-4. Include sources and evidence
-
----
-
-## 📬 Contact
-
-**Divine Ogbonna**  
-Security-Focused Backend Engineer | Fintech Security Researcher
-
-- **GitHub:** [@Divinekk](https://github.com/Divinekk)
-- **LinkedIn:** [Connect](https://linkedin.com/in/divine-ogbonna)
-- **Medium:** [Read My Articles](https://medium.com/@divine.ogbonna.chisom)
-
-For academic collaboration or industry consultation on Nigerian 
-fintech security, please reach out.
-
----
-
-## 📄 License
-
-This research is shared under MIT License for educational and 
-non-commercial use. Commercial applications require attribution.
-
----
-
-**Built to bridge the gap between cybersecurity research and 
-practical implementation in Nigerian fintech.**
+MIT License. Commercial use requires attribution.
