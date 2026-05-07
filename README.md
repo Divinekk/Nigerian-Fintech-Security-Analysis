@@ -12,7 +12,7 @@ Research-backed cryptanalysis of authentication and encryption protocols used in
 **"Cryptanalysis of Cryptographic Algorithms in Nigerian Banking Security: JWT, HMAC, RSA256, AES, HOTP, TOTP and BCrypt"**
 University of Debrecen, 2025. Best Presenter, TDK Research Conference, Informatics Section.
 
-**[Read the Full Paper](./TDK_Banking_Security_Research.pdf)**
+**[UBA/Netflix OTP Abuse](./TDK_Banking_Security_Research.pdf)**
 
 The research reviews existing cryptographic literature, benchmarks algorithms across five metrics, and identifies implementation gaps specific to Nigerian banking infrastructure. No direct code implementation was done within the thesis itself (see p.43). Vault-API was built afterwards as a standalone implementation of the findings.
 
