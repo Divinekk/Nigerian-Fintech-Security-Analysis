@@ -35,7 +35,7 @@ AES-256-GCM provides confidentiality and integrity in one operation. AES-CBC req
 
 ## Case Studies
 
-**[GTBank Website Attack, August 2024](https://businessday.ng/companies/article/gtbanks-cyber-attack-a-wake-up-call-for-nigerian-banks-amid-recapitalisation-efforts/)**
+**[GTBank Website Attack, August 2024](https://businessday.ng)**
 GTBank confirmed an attempted hack on its website one day after renewing its domain, and days after closing a 400.5 billion naira share offer. No customer data was compromised. Relevant to: DNS-layer attack vectors, domain security hygiene, and how high-value financial events create elevated threat windows.
 
 **[UBA/Netflix OTP Abuse](./TDK_Banking_Security_Research.pdf)**
@@ -53,11 +53,11 @@ Two bank officials arraigned for 527 million naira SWIFT fraud. Insufficient ser
 
 The research is theoretical. These two projects implement the findings in code.
 
-**[Vault-API](https://github.com/Divinekk/Vault-API)**
+**[Vault-API](https://github.com)**
 Secure banking backend built directly from the thesis recommendations.
 BCrypt at cost factor 12, JWT authentication, BOLA prevention at the service layer, AES-256-GCM for account balances at rest.
 
-**[LedgerLoom](https://github.com/Divinekk/LedgerLoom)**
+**[LedgerLoom](https://github.com)**
 High-concurrency transaction engine solving the Double-Spending Problem.
 Optimistic locking via JPA @Version, atomic fund transfers with @Transactional.
 
@@ -65,15 +65,15 @@ Optimistic locking via JPA @Version, atomic fund transfers with @Transactional.
 
 ## Related Writing
 
-- [Why API Security is the Backbone of Nigerian Fintech](https://medium.com/@divine.ogbonna.chisom)
-- [How I Prevented BOLA Vulnerabilities in a Banking API](https://medium.com/@divine.ogbonna.chisom)
-- [Completing the Security Trilogy: AES Encryption, Testing and Deployment](https://medium.com/@divine.ogbonna.chisom)
+- [Why API Security is the Backbone of Nigerian Fintech](https://medium.com)
+- [How I Prevented BOLA Vulnerabilities in a Banking API](https://medium.com)
+- [Completing the Security Trilogy: AES Encryption, Testing and Deployment](https://medium.com)
 
 ---
 
 ## Contact
 
 Divine Ogbonna
-[GitHub](https://github.com/Divinekk) | [LinkedIn](https://www.linkedin.com/in/ogbonna-divine-a81453242/) | [Medium](https://medium.com/@divine.ogbonna.chisom)
+[GitHub](https://github.com) | [LinkedIn](https://linkedin.com) | [Medium](https://medium.com)
 
 MIT License. Commercial use requires attribution.
