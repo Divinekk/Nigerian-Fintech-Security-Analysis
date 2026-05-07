@@ -40,10 +40,10 @@ AES-256-GCM provides confidentiality and integrity in one operation. AES-CBC req
 **[GTBank Website Attack, August 2024](https://businessday.ng/companies/article/gtbanks-cyber-attack-a-wake-up-call-for-nigerian-banks-amid-recapitalisation-efforts/)**
 GTBank confirmed an attempted hack on its website one day after renewing its domain, and days after closing a 400.5 billion naira share offer. No customer data was compromised. Relevant to: DNS-layer attack vectors, domain security hygiene, and how high-value financial events create elevated threat windows.
 
-**[UBA/Netflix OTP Abuse](./TDK_Banking_Security_Research.pdf)**
+**[UBA/Netflix OTP Abuse](https://pmnewsnigeria.com/2024/05/21/nefgad-drags-netflix-old-generation-bank-to-court-over-abuse-of-otp-customers-account-details/)**
 NEFGAD documented unauthorized recurring debits from a Nigerian customer's account through exploited OTP flows. Single-use OTPs were not enforced per transaction, allowing repeated charges under a single OTP event.
 
-**[FSDH Insider Fraud, EFCC 2026](https://www.efcc.gov.ng/news/efcc-arraigns-bankers-for-alleged-30666781-50250-fraud-in-lagos) **
+**[FSDH Insider Fraud, EFCC 2026](https://www.efcc.gov.ng/news/efcc-arraigns-bankers-for-alleged-30666781-50250-fraud-in-lagos)**
 Two bank officials arraigned for 527 million naira SWIFT fraud. Insufficient service-layer authorization checks enabled insider exploitation at scale. A direct real-world consequence of the BOLA vulnerabilities analyzed in this research.
 
 **[Digital Payment Fraud Trend, 2024 to 2025](https://nibss-plc.com.ng/digital-payment-fraud-drops-51-to-n25-85b-lagos-accounts-for-63/)**
