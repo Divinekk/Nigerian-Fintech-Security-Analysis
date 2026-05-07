@@ -4,6 +4,7 @@ Research-backed cryptanalysis of authentication and encryption protocols used in
 
 > "52.26 billion naira lost to fraud in 2024. The problem is not the technology. It is the implementation."
 
+
 ---
 
 ## About This Research
