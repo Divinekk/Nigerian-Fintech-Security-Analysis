@@ -1,4 +1,4 @@
-# Nigerian Fintech Security Analysis
+ # Nigerian Fintech Security Analysis
 
 Research-backed cryptanalysis of authentication and encryption protocols used in Nigerian banking systems, with documented vulnerabilities and proposed improvements.
 
@@ -11,7 +11,7 @@ Research-backed cryptanalysis of authentication and encryption protocols used in
 **"Cryptanalysis of Cryptographic Algorithms in Nigerian Banking Security: JWT, HMAC, RSA256, AES, HOTP, TOTP and BCrypt"**
 University of Debrecen, 2025. Best Presenter, TDK Research Conference, Informatics Section.
 
-*[📄 Read the Full Research Paper](https://githubusercontent.com)*
+**[Read the Full Paper](./TDK_Banking_Security_Research.pdf)**
 
 The research reviews existing cryptographic literature, benchmarks algorithms across five metrics, and identifies implementation gaps specific to Nigerian banking infrastructure. No direct code implementation was done within the thesis itself (see p.43). Vault-API was built afterwards as a standalone implementation of the findings.
 
@@ -35,7 +35,7 @@ AES-256-GCM provides confidentiality and integrity in one operation. AES-CBC req
 
 ## Case Studies
 
-**[GTBank Website Attack, August 2024](https://businessday.ng)**
+**[GTBank Website Attack, August 2024](https://businessday.ng/companies/article/gtbanks-cyber-attack-a-wake-up-call-for-nigerian-banks-amid-recapitalisation-efforts/)**
 GTBank confirmed an attempted hack on its website one day after renewing its domain, and days after closing a 400.5 billion naira share offer. No customer data was compromised. Relevant to: DNS-layer attack vectors, domain security hygiene, and how high-value financial events create elevated threat windows.
 
 **[UBA/Netflix OTP Abuse](./TDK_Banking_Security_Research.pdf)**
@@ -53,11 +53,11 @@ Two bank officials arraigned for 527 million naira SWIFT fraud. Insufficient ser
 
 The research is theoretical. These two projects implement the findings in code.
 
-**[Vault-API](https://github.com)**
+**[Vault-API](https://github.com/Divinekk/Vault-API)**
 Secure banking backend built directly from the thesis recommendations.
 BCrypt at cost factor 12, JWT authentication, BOLA prevention at the service layer, AES-256-GCM for account balances at rest.
 
-**[LedgerLoom](https://github.com)**
+**[LedgerLoom](https://github.com/Divinekk/LedgerLoom)**
 High-concurrency transaction engine solving the Double-Spending Problem.
 Optimistic locking via JPA @Version, atomic fund transfers with @Transactional.
 
@@ -65,15 +65,15 @@ Optimistic locking via JPA @Version, atomic fund transfers with @Transactional.
 
 ## Related Writing
 
-- [Why API Security is the Backbone of Nigerian Fintech](https://medium.com)
-- [How I Prevented BOLA Vulnerabilities in a Banking API](https://medium.com)
-- [Completing the Security Trilogy: AES Encryption, Testing and Deployment](https://medium.com)
+- [Why API Security is the Backbone of Nigerian Fintech](https://medium.com/@divine.ogbonna.chisom)
+- [How I Prevented BOLA Vulnerabilities in a Banking API](https://medium.com/@divine.ogbonna.chisom)
+- [Completing the Security Trilogy: AES Encryption, Testing and Deployment](https://medium.com/@divine.ogbonna.chisom)
 
 ---
 
 ## Contact
 
 Divine Ogbonna
-[GitHub](https://github.com) | [LinkedIn](https://linkedin.com) | [Medium](https://medium.com)
+[GitHub](https://github.com/Divinekk) | [LinkedIn](https://www.linkedin.com/in/ogbonna-divine-a81453242/) | [Medium](https://medium.com/@divine.ogbonna.chisom)
 
-MIT License. Commercial use requires attribution.
+MIT License. Commercial use requires attribution
